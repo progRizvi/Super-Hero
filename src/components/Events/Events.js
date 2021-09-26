@@ -11,6 +11,12 @@ const Events = () => {
       .then((res) => res.json())
       .then((data) => setPerson(data));
   }, []);
+
+  useEffect(() => {
+    cart.length >= 1
+      ? (document.title = `Thank you! You Have Selected ${cart.length} Event`)
+      : (document.title = "Charity Event || Public Speaker");
+  });
   const handleCart = (person) => {
     const newPerson = [...cart, person];
     setCart(newPerson);
