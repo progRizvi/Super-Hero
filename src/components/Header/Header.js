@@ -1,3 +1,5 @@
+import { faHandHoldingUsd } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Header.css";
 
@@ -6,7 +8,10 @@ const Header = () => {
     <>
       <header>
         <div className="header-container">
-          <h1>Charity event</h1>
+          <h1>
+            <FontAwesomeIcon icon={faHandHoldingUsd} /> Charity event{" "}
+            <FontAwesomeIcon icon={faHandHoldingUsd} />
+          </h1>
           <p className="header-para">
             The purpose of this event of raising money for charity and
             non-profit.

@@ -1,3 +1,5 @@
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./person.css";
 
@@ -20,7 +22,7 @@ const Person = (props) => {
           className="person-btn"
           onClick={() => props.handleCart(props.person)}
         >
-          Book Now
+          <FontAwesomeIcon icon={faCartArrowDown} /> Book Now
         </button>
       </div>
     </div>
