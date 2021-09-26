@@ -24,7 +24,7 @@ const Events = () => {
       </div>
       <div className="cart-container">
         <h4>
-          You Have Selected {cart.length} {cart.length > 0 ? "Events" : "Event"}
+          You Have Selected {cart.length} {cart.length > 1 ? "Events" : "Event"}
         </h4>
         <Cart cart={cart} />
       </div>

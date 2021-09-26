@@ -1,3 +1,5 @@
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Cart.css";
 
@@ -15,6 +17,13 @@ const Cart = (props) => {
       {cart.map((name) => (
         <div className="individual-name">{name.full_name}</div>
       ))}
+      {cart.length > 0 ? (
+        <button className="checkout-btn">
+          <FontAwesomeIcon icon={faShoppingCart} /> Check Out
+        </button>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

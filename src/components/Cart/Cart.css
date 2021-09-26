@@ -15,3 +15,18 @@
     transform: scale(1.1);
     background: indianred;
 }
+
+.checkout-btn {
+    background: transparent;
+    border: 1px solid orange;
+    color: white;
+    padding: 8px 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.checkout-btn:hover {
+    background: orange;
+}
