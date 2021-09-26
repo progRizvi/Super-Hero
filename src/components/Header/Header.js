@@ -11,7 +11,7 @@ const Header = () => {
             The purpose of this event of raising money for charity and
             non-profit.
           </p>
-          <h3 className="header-h3">Total Budget is : $500 Million</h3>
+          <h3 className="header-h3">Total Fund Rise : $500 Million</h3>
         </div>
         <h2 className="event-speaker">Event Speakers</h2>
       </header>
